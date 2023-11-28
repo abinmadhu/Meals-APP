@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,200&family=Lato:wght@100;300;400;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWSOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Find your Favourite Meals</title>
+  </head>
+  <body>
+    <div class="meal-container">
+      <div class="meal-wrapper">
+        <!-- Search Section  -->
+        <div class="meal-search">
+          <h2 class="title">Find your Favourite Meals</h2>
+          <blockquote>
+            People who love to eat are always the best people.
+            <cite>-Julia Child</cite>
+          </blockquote>
+          <p id="fav-link">My Favourites</p>
+          <div class="search-box">
+            <div class="search-row">
+              <input type="text" id="search-input" placeholder="Find your Favourite Meal..." autocomplete="off">
+              <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="sug-box">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="meal-result">
+          <h2 class="title">Your Search Results</h2>
+          <div class="container">
+            <div class="row" id="row">
+              <!-- <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 meal-item">
+                <div class="card">
+                  <img
+                    src="https://i.pinimg.com/236x/a8/0d/e4/a80de4beda4160b5433a355d80f2c9e9.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Biriyani</h5>
+                    <div class="more">
+                      <button class="more-btn">
+                        More
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                      <button class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 meal-item">
+                <div class="card">
+                  <img
+                    src="https://i.pinimg.com/236x/a8/0d/e4/a80de4beda4160b5433a355d80f2c9e9.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Biriyani</h5>
+                    <div class="more">
+                      <button class="more-btn">
+                        More
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                      <button class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 meal-item">
+                <div class="card">
+                  <img
+                    src="https://i.pinimg.com/236x/a8/0d/e4/a80de4beda4160b5433a355d80f2c9e9.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Biriyani</h5>
+                    <div class="more">
+                      <button class="more-btn">
+                        More
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                      <button class="fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>     -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favourites" id="fav-menu">
+        <div id="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h3>Your Favourites</h3>
+        <div class="fav-container" id="fav-container">
+          <!-- <div class="fav-item">
+            <img src="https://i.pinimg.com/236x/a4/89/6c/a4896c769d3bb1b9411c201941bca67c.jpg" alt="">
+            <p class="meal-name">Chicken Biriyani</p>
+            <i class="fa-solid fa-trash" id="fav-delete"></i>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="details-page" id="details">
+      <!-- <div class="close-det">
+        <i class="fa-solid fa-xmark"></i>
+      </div> -->
+      <!-- <div class="head">
+        <h3>Meal Name</h3>
+        <p>Categoery:Chineese</p>
+      </div>
+      <div class="instructions">
+        <h4>Instructions</h4>
+        <p>
+          Heat the oil in a frying pan that has a lid, then soften the onions,
+          chilli, garlic and coriander stalks for 5 mins until soft. Stir in the
+          tomatoes and sugar, then bubble for 8-10 mins until thick. Can be
+          frozen for 1 month.Using the back of a large spoon, make 4 dips in the
+          sauce, then crack an egg into each one. Put a lid on the pan, then
+          cook over a low heat for 6-8 mins, until the eggs are done to your
+          liking. Scatter with the coriander leaves and serve with crusty bread.
+        </p>
+      </div>
+      <img
+      src="https:\/\/www.themealdb.com\/images\/media\/meals\/g373701551450225.jpg" 
+      alt="">
+      <p class="order-btn">Order Now</p>
+    </div> -->
+
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+  </body>
+</html>
